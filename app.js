@@ -12,4 +12,5 @@ submitBtn.addEventListener('click', () => {
     const nameEntry = textBox.value;
     console.log(nameEntry);
     nameDisplay.textContent = nameEntry;
+    nameEntry.value = '';
 });
