@@ -11,12 +11,66 @@ main {
 body {
     width: 100vw;
     height: 100vh;
+}
+
+main {
     display: grid;
-    grid-template-areas: 1fr 2fr;
-    /* padding: 20%; */
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 2fr 2fr 1fr;
+}
+
+.user-entry {
+    display: flex;
+    gap: 1rem;
+    margin-top: 4rem;
+}
+
+#textbox {
+    display: inline-block;
+    flex: none;
+    max-height: 1.5rem;
+    padding: 0.4rem;
+    border: 1px solid grey;
+    border-radius: 0.5rem;
+}
+
+#submit-btn {
+    max-height: 1.5rem;
+    max-height: 1.5rem;
+    padding: 0.2rem 0.4rem;
+    border: 1px solid grey;
+    border-radius: 0.5rem;
+    box-shadow: inset 0px 1px 0px 0px #ffffff;
+    background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+    background-color: #ffffff;
+    display: inline-block;
+    cursor: pointer;
+    color: #666666;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffffff;
+}
+
+#submit-btn:hover {
+    background: linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+    background-color: #f6f6f6;
+}
+#submit-btn:active {
+    position: relative;
+    top: 1px;
+}
+
+.user-entry {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    justify-self: center;
+    align-self: center;
 }
 
 .name-container {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    justify-self: center;
+    align-self: center;
     height: 10rem;
     width: 20rem;
     border-radius: 1rem;
@@ -36,6 +90,8 @@ body {
     text-align: center;
     height: 4rem;
     padding-top: 1rem;
+    font-size: 2rem;
+    font-family: 'Schoolbell', cursive;
 }
 
 .bottom-section {

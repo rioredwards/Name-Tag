@@ -8,9 +8,11 @@ console.log(textBox);
 console.log(submitBtn);
 console.log(nameDisplay);
 
+// Display name in Name Tag
 submitBtn.addEventListener('click', () => {
-    const nameEntry = textBox.value;
+    let nameEntry = textBox.value;
     console.log(nameEntry);
     nameDisplay.textContent = nameEntry;
-    nameEntry.value = '';
+    textBox.value = '';
+    console.log(nameEntry);
 });
