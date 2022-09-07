@@ -1,8 +1,13 @@
-// import functions and grab DOM elements
+'use strict';
 
-// let state
+// Get HTML Elements
+const nameEntry = document.getElementById('textbox');
+const submitBtn = document.getElementById('submit-btn');
+const nameDisplay = document.getElementById('name-section');
+console.log(nameEntry);
+console.log(submitBtn);
+console.log(nameDisplay);
 
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+submitBtn.addEventListener('click', () => {
+
+});
