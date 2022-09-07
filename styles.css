@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    /* display: grid;
+    grid-template-areas: 1fr 2fr ; */
+    padding: 20%;
+}
+
+.name-container {
+    height: 10rem;
+    width: 20rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.top-section {
+    background-color: red;
+    text-align: center;
+    height: 4rem;
+}
+
+#name-section {
+    background-color: white;
+    text-align: center;
+    height: 4rem;
+}
+
+.bottom-section {
+    background-color: red;
+    height: 3rem;
+}
