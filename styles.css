@@ -11,9 +11,9 @@ main {
 body {
     width: 100vw;
     height: 100vh;
-    /* display: grid;
-    grid-template-areas: 1fr 2fr ; */
-    padding: 20%;
+    display: grid;
+    grid-template-areas: 1fr 2fr;
+    /* padding: 20%; */
 }
 
 .name-container {
@@ -25,14 +25,17 @@ body {
 
 .top-section {
     background-color: red;
+    color: white;
     text-align: center;
     height: 4rem;
+    padding-top: 1rem;
 }
 
 #name-section {
     background-color: white;
     text-align: center;
     height: 4rem;
+    padding-top: 1rem;
 }
 
 .bottom-section {
