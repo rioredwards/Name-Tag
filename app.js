@@ -9,10 +9,19 @@ console.log(submitBtn);
 console.log(nameDisplay);
 
 // Display name in Name Tag
-submitBtn.addEventListener('click', () => {
+function displayName() {
     let nameEntry = textBox.value;
     console.log(nameEntry);
     nameDisplay.textContent = nameEntry;
     textBox.value = '';
-    console.log(nameEntry);
+}
+
+// Submit button pressed
+submitBtn.addEventListener('click', displayName());
+
+// Enter key pressed + text-box is not empty
+document.addEventListener('keydown', e => {
+    if (e.key === 'Enter') {
+        displayName();
+    }
 });
