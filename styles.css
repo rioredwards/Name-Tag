@@ -34,6 +34,12 @@ main {
     border-radius: 0.5rem;
 }
 
+#textbox:focus {
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 4px #9ecaed;
+}
+
 #submit-btn {
     max-height: 1.5rem;
     max-height: 1.5rem;
@@ -76,6 +82,13 @@ main {
     width: 20rem;
     border-radius: 1rem;
     overflow: hidden;
+    box-shadow: 6px 3px 11px -1px rgba(0, 0, 0, 0.37);
+}
+
+.name-container:hover {
+    position: relative;
+    top: 1px;
+    box-shadow: 6px 3px 11px -1px rgba(80, 165, 255, 0.526);
 }
 
 .top-section {
@@ -93,6 +106,7 @@ main {
     padding-top: 1rem;
     font-size: 2rem;
     font-family: 'Schoolbell', cursive;
+    letter-spacing: 3px;
 }
 
 .bottom-section {
